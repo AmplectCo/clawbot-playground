@@ -16,10 +16,11 @@ export const refreshOpenClawData = createEvent();
 
 // Effects
 export const fetchOpenClawStatusFx = createEffect(async (): Promise<OpenClawStatus> => {
-  // In production build, this reads from static JSON
-  // In development, this could call actual API
+  // Add cache-busting timestamp
+  const timestamp = Date.now();
+  
   try {
-    const response = await fetch('/openclaw-data.json');
+    const response = await fetch(`/openclaw-data.json?_t=${timestamp}`);
     if (response.ok) {
       return await response.json();
     }
