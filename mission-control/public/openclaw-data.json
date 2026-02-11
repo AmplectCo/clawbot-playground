@@ -1,0 +1,42 @@
+{
+  "sessions": [
+    {
+      "id": "588ebf46",
+      "name": "Telegram DM (Artemius)",
+      "status": "active",
+      "tokens": 179011,
+      "lastActivity": "now",
+      "contextTokens": 262144
+    },
+    {
+      "id": "09cda8ca",
+      "name": "Terminal (main)",
+      "status": "idle",
+      "tokens": 88905,
+      "lastActivity": "2h ago",
+      "contextTokens": 262144
+    },
+    {
+      "id": "79624043",
+      "name": "Telegram DM (Alex)",
+      "status": "idle",
+      "tokens": 15440,
+      "lastActivity": "3h ago",
+      "contextTokens": 262144
+    },
+    {
+      "id": "c54fe935",
+      "name": "Telegram DM (Egor)",
+      "status": "offline",
+      "tokens": 39110,
+      "lastActivity": "5h ago",
+      "contextTokens": 262144
+    }
+  ],
+  "totalTokens": 322466,
+  "contextUsed": 179011,
+  "contextTotal": 262144,
+  "model": "kimi-coding/k2p5",
+  "version": "2026.2.6-3",
+  "timestamp": "2026-02-11T18:59:00Z"
+}

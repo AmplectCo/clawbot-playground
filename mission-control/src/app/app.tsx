@@ -5,14 +5,14 @@ import { SessionsList } from '@/widgets/sessions-list/ui';
 import { TasksList } from '@/widgets/tasks-list/ui';
 import { QuickActions } from '@/widgets/quick-actions/ui';
 import { TokenUsageChart } from '@/widgets/token-chart/ui';
-import { fetchSessionsFx } from '@/entities/session/model';
+import { fetchOpenClawStatusFx } from '@/entities/openclaw/model';
 import { fetchTasksFx } from '@/entities/task/model';
 import './app.css';
 
 export function App() {
   useEffect(() => {
-    // Initial data fetch only - no random updates
-    fetchSessionsFx();
+    // Load real OpenClaw data
+    fetchOpenClawStatusFx();
     fetchTasksFx();
   }, []);
 
