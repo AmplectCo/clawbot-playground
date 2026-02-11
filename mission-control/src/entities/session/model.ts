@@ -13,13 +13,13 @@ export const tokenHistoryUpdated = createEvent<TokenDataPoint>();
 
 // Effects
 export const fetchSessionsFx = createEffect(async () => {
-  // In real implementation, this would call OpenClaw API
+  // Static data - no random jumps
   return [
     {
       id: '1',
       name: 'Telegram DM (Artemius)',
       status: 'active' as const,
-      tokens: Math.floor(Math.random() * 50000) + 20000,
+      tokens: 32980,
       lastActivity: 'now',
       contextTokens: 262144,
     },
@@ -27,7 +27,7 @@ export const fetchSessionsFx = createEffect(async () => {
       id: '2',
       name: 'Terminal (main)',
       status: 'idle' as const,
-      tokens: Math.floor(Math.random() * 80000) + 50000,
+      tokens: 88905,
       lastActivity: '2h ago',
       contextTokens: 262144,
     },
